@@ -23,9 +23,6 @@
 
   }
 
-
-
-
   /*
    * Create a function named setMyLightClass
    * which takes two arguments: event, desiredClass
@@ -38,6 +35,11 @@
    * on this dom element, set the className to the value of desiredClass
    */
 
+   function setMyLightClass(event, desiredClass) {
+     var lightId = this.dataset.lightId;
+     var lights = document.getElementbyId(lightId);
+     lights.className(desiredClass);
+   }
 
 
   /*
@@ -45,6 +47,20 @@
    * use a dom element selector method to assign each const
    * to the button that has an id of the same name.
    */
+
+   const btn1 = this.ID = "btn1";
+   const btn2 = this.ID = "btn2";
+   const btn3 = this.ID = "btn3";
+   const btn4 = this.ID = "btn4";
+   const btn5 = this.ID = "btn5";
+   const btn6 = this.ID = "btn6";
+   const btn7 = this.ID = "btn7";
+   const btn8 = this.ID = "btn8";
+   const btn9 = this.ID = "btn9";
+   const btn10 = this.ID = "btn10";
+   const btn11 = this.ID = "btn11";
+   const btn12 = this.ID = "btn12";
+   const btn13 = this.ID = "btn13";
 
 
   /*
