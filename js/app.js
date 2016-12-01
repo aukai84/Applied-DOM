@@ -38,7 +38,7 @@
    function setMyLightClass(event, desiredClass) {
      var lightId = this.dataset.lightId;
      var lights = document.getElementById(lightId);
-     lights.className = "desiredClass";
+     lights.className = desiredClass;
    }
 
 
@@ -109,7 +109,7 @@
    */
 
    btn4.addEventListener("click", function(event){
-    setMyLightClass.apply(this,[event, "light-green"]);
+    setMyLightClass.apply(btn4, [event, "light-green"]);
    });
 
   /*
@@ -124,7 +124,7 @@
    */
 
    btn5.addEventListener("click", (event) => {
-    setMyLightClass.apply(btn5,[event, "light-green"]);
+    setMyLightClass.apply(this.btn5, [event, "light-green"]);
    })
 
   /*
