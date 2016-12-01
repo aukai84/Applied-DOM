@@ -72,6 +72,9 @@
    * to set the context to the correct object (the current context)
    */
 
+   btn1.addEventListener("click", function(){
+    setMyLightGreen.apply(this);
+   });
 
   /*
    * Add a click event listener to btn2
@@ -82,6 +85,9 @@
    * to set the context to the correct object
    */
 
+   btn2.addEventListener("click", (event) => {
+    setMyLightGreen.apply(this);
+   })
 
   /*
    * Add a click event listener to btn3
