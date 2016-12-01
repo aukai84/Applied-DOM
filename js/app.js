@@ -18,7 +18,7 @@
 
    function setMyLightGreen( ) {
      var lightId = this.dataset.lightId;
-     var lights = document.getElementbyId(lightId);
+     var lights = document.getElementById(lightId);
      lights.className = "light-green";
 
   }
@@ -37,7 +37,7 @@
 
    function setMyLightClass(event, desiredClass) {
      var lightId = this.dataset.lightId;
-     var lights = document.getElementbyId(lightId);
+     var lights = document.getElementById(lightId);
      lights.className(desiredClass);
    }
 
@@ -48,19 +48,20 @@
    * to the button that has an id of the same name.
    */
 
-   const btn1 = this.ID = "btn1";
-   const btn2 = this.ID = "btn2";
-   const btn3 = this.ID = "btn3";
-   const btn4 = this.ID = "btn4";
-   const btn5 = this.ID = "btn5";
-   const btn6 = this.ID = "btn6";
-   const btn7 = this.ID = "btn7";
-   const btn8 = this.ID = "btn8";
-   const btn9 = this.ID = "btn9";
-   const btn10 = this.ID = "btn10";
-   const btn11 = this.ID = "btn11";
-   const btn12 = this.ID = "btn12";
-   const btn13 = this.ID = "btn13";
+   const btn1 = document.getElementById("btn1");
+   const btn2 = document.getElementById("btn2");
+   const btn3 = document.getElementById("btn3");
+   const btn4 = document.getElementById("btn4");
+   const btn5 = document.getElementById("btn5");
+   const btn6 = document.getElementById("btn6");
+   const btn7 = document.getElementById("btn7");
+   const btn8 = document.getElementById("btn8");
+   const btn9 = document.getElementById("btn9");
+   const btn10 = document.getElementById("btn10");
+   const btn11 = document.getElementById("btn11");
+   const btn12 = document.getElementById("btn12");
+   const btn13 = document.getElementById("btn13");
+   const btn14 = document.getElementById("btn14");
 
 
   /*
@@ -86,7 +87,7 @@
    */
 
    btn2.addEventListener("click", (event) => {
-    setMyLightGreen.apply(this);
+    setMyLightGreen.apply(btn2);
    })
 
   /*
