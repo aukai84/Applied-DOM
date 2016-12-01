@@ -38,7 +38,7 @@
    function setMyLightClass(event, desiredClass) {
      var lightId = this.dataset.lightId;
      var lights = document.getElementById(lightId);
-     lights.className(desiredClass);
+     lights.className = "desiredClass";
    }
 
 
@@ -95,6 +95,7 @@
    * the handler method will be a reference to the setMyLightGreen function
    */
 
+   btn3.addEventListener("click", setMyLightGreen);
 
   /*
    * Add a click event listener to btn4
@@ -107,6 +108,9 @@
    *   and passing two aditional arguments, event and 'light-green'
    */
 
+   btn4.addEventListener("click", function(event){
+    setMyLightClass.apply(this,[event, "light-green"]);
+   });
 
   /*
    * Add a click event listener to btn5
