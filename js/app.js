@@ -4,14 +4,26 @@
    * Create a function named setMyLightGreen
    * which takes zero arguments
    * and does not return a value.
+
+
    *
    * declare a variable named lightId
    * and assign it's value to the context's dataset.lightId property
+
+   var lightId = this.dataset.lightId
    *
    * use a dom method to select an element where it's ID matches the value of lightId
    * on this dom element, set the className to 'light-green'
    */
 
+   function setMyLightGreen( ) {
+      this.backgroundColor = green;
+  }
+
+  var lightId = this.dataset.lightId;
+
+  var lights = document.getElementbyId(lightId);
+  lights.className = "light-green";
 
   /*
    * Create a function named setMyLightClass
