@@ -17,13 +17,14 @@
    */
 
    function setMyLightGreen( ) {
-      this.backgroundColor = green;
+     var lightId = this.dataset.lightId;
+     var lights = document.getElementbyId(lightId);
+     lights.className = "light-green";
+
   }
 
-  var lightId = this.dataset.lightId;
 
-  var lights = document.getElementbyId(lightId);
-  lights.className = "light-green";
+
 
   /*
    * Create a function named setMyLightClass
@@ -36,6 +37,7 @@
    * use a dom method to select an element where it's ID matches the value of lightId
    * on this dom element, set the className to the value of desiredClass
    */
+
 
 
   /*
