@@ -245,7 +245,7 @@
 
    btn12.addEventListener("click", function(event){
     setLight12Class(event, "light-green");
-   })
+   });
 
   /*
    * Add a click event listener to btn13
@@ -262,9 +262,9 @@
    */
 
    btn13.addEventListener("click", function(event){
-    setMyLightClass.bind(btn13);
-      }
-   })
+    setMyLightClass.bind(this)(event, "light-green");
+      });
+
 
   /*
    * Add a click event listener to btn14
