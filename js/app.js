@@ -88,7 +88,7 @@
 
    btn2.addEventListener("click", (event) => {
     setMyLightGreen.apply(btn2);
-   })
+   });
 
   /*
    * Add a click event listener to btn3
@@ -125,7 +125,7 @@
 
    btn5.addEventListener("click", (event) => {
     setMyLightClass.apply(this.btn5, [event, "light-green"]);
-   })
+   });
 
   /*
    * Add a click event listener to btn6
@@ -138,7 +138,7 @@
 
    btn6.addEventListener("click", function () {
      setMyLightGreen.call(this);
-   })
+   });
 
   /*
    * Add a click event listener to btn7
@@ -151,7 +151,7 @@
 
    btn7.addEventListener("click", (event) => {
     setMyLightGreen.call(btn7);
-   })
+   });
 
   /*
    * Add a click event listener to btn8
@@ -166,7 +166,7 @@
 
    btn8.addEventListener("click", function(event){
     setMyLightGreen.call(this, event, "light-green");
-   })
+   });
 
   /*
    * Add a click event listener to btn9
@@ -181,7 +181,7 @@
 
    btn9.addEventListener("click", (event) => {
     setMyLightClass.call(btn9, event, "light-green");
-   })
+   });
 
   /*
    * Declare a new const named setLight10Green
@@ -200,7 +200,7 @@
    */
    btn10.addEventListener("click", function(){
     setLight10green();
-   })
+   });
 
   /*
    * Declare a new const named setLight11Green
@@ -222,7 +222,7 @@
 
    btn11.addEventListener("click", function(){
     setLight11Green();
-   })
+   });
 
   /*
    * Declare a new const named setLight12Class
